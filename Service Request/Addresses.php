@@ -8,11 +8,11 @@ class Addresses {
     private $postalCode;
 
     public function __construct($addressData) {
-        $this->street = $addressData['street'] ?? null;
-        $this->city = $addressData['city'] ?? null;
-        $this->state = $addressData['state'] ?? null;
-        $this->country = $addressData['country'] ?? null;
-        $this->postalCode = $addressData['postalCode'] ?? null;
+        $this->getStreet($requestData['street']);
+        $this->getCity($requestData['city']);
+        $this->getState($requestData['state']);
+        $this->getCountry($requestData['country']);
+        $this->getPostalCode($requestData['postalCode']);
     }
 
     // Getters
