@@ -5,9 +5,13 @@ class Addresses {
     private $itemAssetTag;
 
     public function __construct($addressData) {
-        $this->itemType = $addressData['itemType'] ?? null;
-        $this->temSerialNumber = $addressData['temSerialNumber'] ?? null;
-        $this->itemAssetTag = $addressData['itemAssetTag'] ?? null;
+
+        $this->getItemType($addressData['itemType']);
+        $this->getTemSerialNumber($addressData['temSerialNumber']);
+        $this->getItemAssetTag($addressData['itemAssetTag']);
+
+
+
     }
 
     // Getters
