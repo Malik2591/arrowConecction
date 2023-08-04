@@ -44,43 +44,42 @@ class RequestsServiceNow {
     
     public function __construct($requestData) {
                 
-        $this->getLob($requestData['lob']);
-        $this->getMsgID($requestData['msgID']);
-        $this->getSvcOrderReqNumber($requestData['svcOrderReqNumber']);
-        $this->getSvcOrderNumber($requestData['svcOrderNumber']);
-        $this->getSvcOrderReferenceNumber($requestData['svcOrderReferenceNumber']);
-        $this->getSvcOrderType($requestData['svcOrderType']);
-        $this->getSvcOrderPriority($requestData['svcOrderPriority']);
-        $this->getSvcOrderDeliveryType($requestData['svcOrderDeliveryType']);
-        $this->getSpecialInstructions($requestData['specialInstructions']);
-        $this->geCustomerOrderIdentifier($requestData['customerOrderIdentifier']);
-        $this->getCustomerName($requestData['customerName']);
-        $this->getCustomerContact($requestData['customerContact']);
-        $this->getCustomerTelephone($requestData['customerTelephone']);
-        $this->getCustomerEmail;($requestData['customerEmail;']);
-        $this->getCustomerCompanyBPID($requestData['customerCompanyBPID']);
-        $this->get($requestData['employeeID']);
-        $this->getEmployeeID($requestData['']);
-        $this->getEmployeeType($requestData['employeeType']);
-        $this->getAddresses($requestData['addresses']);
-        $this->getOrganizationalUnit($requestData['organizationalUnit']);
-        $this->getShippingMethod($requestData['shippingMethod']);
-        $this->getPersona($requestData['persona']);
-        $this->getProfile($requestData['profile']);
-        $this->getDeviceTier($requestData['deviceTier']);
-        $this->getDeviceType($requestData['deviceType']);
-        $this->getKitProfile($requestData['kitProfile']);
-        $this->getImageType($requestData['imageType']);
-        $this->getProductID($requestData['productID']);
-        $this->getModeledAfter($requestData['modeledAfter']);
-        $this->getHdRetentionIndicator($requestData['hdRetentionIndicator']);
-        $this->getCidCoverage($requestData['cidCoverage']);
-        $this->getCidCaseIndicator($requestData['cidCaseIndicator']);
-        $this->getRequestedDeliveryDate($requestData['requestedDeliveryDate']);
-        $this->getReturnItems($requestData['returnItems']);
-        $this->getCustom($requestData['custom']);
-        $this->getUpdateDate($requestData['updateDate']);
-        $this->getUpdateReason($requestData['updateReason']);
+        $this->setLob($requestData['lob']);
+        $this->setMsgID($requestData['msgID']);
+        $this->setSvcOrderReqNumber($requestData['svcOrderReqNumber']);
+        $this->setSvcOrderNumber($requestData['svcOrderNumber']);
+        $this->setSvcOrderReferenceNumber($requestData['svcOrderReferenceNumber']);
+        $this->setSvcOrderType($requestData['svcOrderType']);
+        $this->setSvcOrderPriority($requestData['svcOrderPriority']);
+        $this->setSvcOrderDeliveryType($requestData['svcOrderDeliveryType']);
+        $this->setSpecialInstructions($requestData['specialInstructions']);
+        $this->setCustomerOrderIdentifier($requestData['customerOrderIdentifier']);
+        $this->setCustomerName($requestData['customerName']);
+        $this->setCustomerContact($requestData['customerContact']);
+        $this->setCustomerTelephone($requestData['customerTelephone']);
+        $this->setCustomerEmail($requestData['customerEmail;']);
+        $this->setCustomerCompanyBPID($requestData['customerCompanyBPID']);
+        $this->setEmployeeID($requestData['employeeID']);   
+        $this->setEmployeeType($requestData['employeeType']);
+        $this->setAddresses($requestData['addresses']);
+        $this->setOrganizationalUnit($requestData['organizationalUnit']);
+        $this->setShippingMethod($requestData['shippingMethod']);
+        $this->setPersona($requestData['persona']);
+        $this->setProfile($requestData['profile']);
+        $this->setDeviceTier($requestData['deviceTier']);
+        $this->setDeviceType($requestData['deviceType']);
+        $this->setKitProfile($requestData['kitProfile']);
+        $this->setImageType($requestData['imageType']);
+        $this->setProductID($requestData['productID']);
+        $this->setModeledAfter($requestData['modeledAfter']);
+        $this->setHdRetentionIndicator($requestData['hdRetentionIndicator']);
+        $this->setCidCoverage($requestData['cidCoverage']);
+        $this->setCidCaseIndicator($requestData['cidCaseIndicator']);
+        $this->setRequestedDeliveryDate($requestData['requestedDeliveryDate']);
+        $this->setReturnItems($requestData['returnItems']);
+        $this->setCustom($requestData['custom']);
+        $this->setUpdateDate($requestData['updateDate']);
+        $this->setUpdateReason($requestData['updateReason']);
     
       
     }
@@ -200,7 +199,7 @@ class RequestsServiceNow {
 
     // Setters
     
-    public function setlob($lob) {   //Tengo duda 01
+    public function setLob($lob) {   //Tengo duda 01
         $this->lob = $lob;
     }
     public function setMsgID($msgID) {   //Tengo duda 02
@@ -284,7 +283,7 @@ class RequestsServiceNow {
     public function setModeledAfter($modeledAfter) {
         $this->modeledAfter = $modeledAfter;
     }
-    public function set($hdRetentionIndicator) {
+    public function setHdRetentionIndicator($hdRetentionIndicator) {
         $this->hdRetentionIndicator = $hdRetentionIndicator;
     }
     public function setCidCoverage($cidCoverage) {
@@ -311,6 +310,3 @@ class RequestsServiceNow {
     } 
     
 }
-
-
-?>
