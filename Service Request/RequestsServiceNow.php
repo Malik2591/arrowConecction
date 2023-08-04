@@ -34,7 +34,6 @@ class RequestsServiceNow {
     private $cidCaseIndicator;
     private $requestedDeliveryDate;
     private $returnItems; 
- 
     private $custom; 
     private $updateDate; 
     private $updateReason; 
