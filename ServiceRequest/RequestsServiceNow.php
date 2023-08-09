@@ -41,10 +41,9 @@ class RequestsServiceNow {
 
 
     
-    public function __construct($requestData) {
-                
+    public function __construct($requestData) {             
         $this->setLob($requestData['lob']);
-        $this->setMsgID($requestData['msgID']);
+        $this->seTmsgID($requestData['msgID']);
         $this->setSvcOrderReqNumber($requestData['svcOrderReqNumber']);
         $this->setSvcOrderNumber($requestData['svcOrderNumber']);
         $this->setSvcOrderReferenceNumber($requestData['svcOrderReferenceNumber']);
@@ -78,9 +77,7 @@ class RequestsServiceNow {
         $this->setReturnItems($requestData['returnItems']);
         $this->setCustom($requestData['custom']);
         $this->setUpdateDate($requestData['updateDate']);
-        $this->setUpdateReason($requestData['updateReason']);
-    
-      
+        $this->setUpdateReason($requestData['updateReason']);   
     }
 
 

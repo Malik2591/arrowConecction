@@ -9,9 +9,6 @@ class Addresses {
         $this->getItemType($addressData['itemType']);
         $this->getTemSerialNumber($addressData['temSerialNumber']);
         $this->getItemAssetTag($addressData['itemAssetTag']);
-
-
-
     }
 
     // Getters
@@ -38,8 +35,5 @@ class Addresses {
 
     public function setItemAssetTag($itemAssetTag) {
         $this->itemAssetTag = $itemAssetTag;
+        }
     }
-}
-
-
-?>
